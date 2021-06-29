@@ -1,14 +1,15 @@
-
-body {
+.main-container {
     
     background: url('../../assets/wallpaper_artwork.png') no-repeat, linear-gradient(90deg, #CF1C09 0%, #FD6B10 80.24%, #FCFE14 165.66%);
     background-position-x: right;
-    background-position-y: 50%;
+    background-position-y: 45%;
+    font-family: 'Nunito', sans-serif;
+
 }
 
 
-.container {
-    height: 100vh;
+.container-home {
+    height: 90vh;
     display: flex;
     align-items: center;
 

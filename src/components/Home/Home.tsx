@@ -1,4 +1,5 @@
 import { Navbar } from '../Navbar/Navbar';
+import { Footer } from '../Footer/Footer';
 import { Selectserver } from '../Selectserver/Selectserver';
 
 import './style.scss';
@@ -6,10 +7,11 @@ import './style.scss';
 
 export function Home(){
     return(
-        <>
+
+        <div className="main-container">
             <Navbar />
 
-            <div className="container">
+            <div className="container-home">
 
                 <aside>
                     <h2>Selecione o servidor</h2>
@@ -34,6 +36,8 @@ export function Home(){
                     </div>
                 </aside>
             </div>
-        </>
+
+            <Footer />
+        </div>
     );
 }
