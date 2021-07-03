@@ -1,0 +1,166 @@
+@use '../../variables';
+
+.create-character-container {
+   
+    main {
+        font-family: 'Nunito', sans-serif;
+        color: variables.$primary-text-color;
+        max-width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+        padding: 3rem;
+        display: flex;
+        justify-content: center;
+
+        .form-create-character {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            
+        }
+        .legend-title {
+            color: variables.$secondary-text-color;
+        }
+        .title {
+
+            input {
+                border-radius: 5px;
+                border: 1px solid grey;
+                margin-left: 4px;
+                height: 30px;
+                padding: 8px;
+            }
+
+        }
+
+        .vocation {
+            height: 30px;
+            margin: 12px 0;
+            position: relative;
+            select {
+                margin-left: 4px;
+                border: 1px solid grey;
+                border-radius: 5px;
+                padding: 0;
+                text-align: center;
+
+                font-size: 13px;
+                height: 30px;
+                max-width: 100px;
+            }
+
+            .vocation-item {
+                position: absolute;
+                right: 30%;
+                
+                img {
+                    height:30px;
+                    
+                }
+
+                
+            }
+
+        }
+
+
+        .charms-imbuements {
+            display: flex;
+            flex-direction: column;
+
+            max-width: 20rem;
+            padding: 0.8rem;
+
+            .skills {
+                padding: 8px;
+                border-radius: 4px;
+                margin: 12px 0;
+
+                input {
+                    border-radius: 4px;
+                    border-width: 1px;
+                    max-width: 100px;
+                    margin-left: 8px;
+                }
+            }
+
+            .imbuements,.charms {
+                
+                fieldset {
+                    padding: 8px;
+                    border-radius: 4px;
+                    margin: 12px 0; 
+                }
+                
+                label {
+                    padding: 0 4px;
+                    margin: 0 4px;
+                    background: variables.$background-color-items;
+                    border: 1px solid #89b2f6;
+                    border-radius: 4px;
+                    line-height: 30px;
+                    user-select: none;
+                    
+                }
+
+                input {
+                    margin-left: 4px;
+
+                }
+            }
+
+            .charm-expansion {
+                padding: 0.8rem;
+                border: 1px solid grey;
+                border-radius: 5px;
+                input {
+                    margin-left: 4px;
+                }
+            }
+        }
+
+
+        .screenshot, .price {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-bottom: 12px;
+            input {
+                border-radius: 5px;
+                border-width: 1px;
+                max-width: 80%;
+                align-self: center;
+            }
+        }
+
+
+    }
+
+}
+
+.btn-create {
+    padding: 10px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.12), 0px 1px 8px rgba(0, 0, 0, 0.1);
+
+    background-color: variables.$primary-color;
+    color: #fff;
+
+    border-radius: 10px;
+    border-width: 0px;
+
+    font-weight: 400;
+    font-style: italic;
+    font-size: 13px;
+    &:hover {
+        opacity: 0.8;
+        cursor: pointer;
+       
+    }
+}
+
+.submit-create {
+    text-align: center;
+    
+}

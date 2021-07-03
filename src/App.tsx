@@ -5,6 +5,7 @@ import { AuthContextProvider } from './components/Auth/AuthContext';
 import { Characters } from './pages/Characters/Characters';
 import { Home } from './components/Home/Home';
 import './global.scss';
+import { NewCharacter } from './pages/NewCharacter/NewCharacter';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
           <Switch>
               <Route path='/' exact component={Home} />
               <Route path='/characters/' exact component={Characters} />
+              <Route path='/newcharacter' exact component={NewCharacter} />
           </Switch>
       </AuthContextProvider>
     </BrowserRouter>

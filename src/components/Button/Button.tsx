@@ -7,6 +7,6 @@ type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement>;
 
 export function Button(props: ButtonProps){
     return (
-        <button {...props} />
+        <button className="custom-button" {...props} />
     )
 }
